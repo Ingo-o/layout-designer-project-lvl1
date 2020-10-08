@@ -1,1 +1,27 @@
-/** CSS STYLE **/
+/** FONTS **/
+.main-font {
+  font: 16px/1.6em open-sans;
+}
+
+.main-font-color {
+  color: #2a2626;
+}
+
+.h1-font {
+  font: 72px/1.2em neucha;
+}
+
+.h2-font {
+  font: 60px/1.2em neucha;
+}
+
+.h3-font {
+  font: 34px/1.2em neucha;
+}
+
+/** SECTION **/
+.section {
+  max-width: 1110px;
+  margin: 100px 0 100px 0; /** внешние - сверху, справа, снизу, слева (возможно нужен padding) **/
+  /** + выравнивание по центру **/
+}
