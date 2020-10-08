@@ -1,6 +1,16 @@
 /** FONTS **/
-.main-font {
-  font: 16px/1.6em open-sans;
+@font-face {
+  font-family: neucha;
+  src: url(fonts/Neucha-Regular.ttf);
+}
+
+@font-face {
+  font-family: open-sans;
+  src: url(fonts/OpenSans-Regular.ttf);
+}
+
+.content-font {
+  font: 16px/1.6em "open sans", sans-serif;
 }
 
 .main-font-color {
@@ -8,20 +18,35 @@
 }
 
 .h1-font {
-  font: 72px/1.2em neucha;
+  font: 72px/1.2em neucha, sans-serif;
 }
 
 .h2-font {
-  font: 60px/1.2em neucha;
+  font: 60px/1.2em neucha, sans-serif;
 }
 
 .h3-font {
-  font: 34px/1.2em neucha;
+  font: 34px/1.2em neucha, sans-serif;
 }
 
 /** SECTION **/
 .section {
   max-width: 1110px;
   margin: 100px 0 100px 0; /** внешние - сверху, справа, снизу, слева (возможно нужен padding) **/
+
   /** + выравнивание по центру **/
 }
+
+header {
+  height: 600px;
+
+  background-color: gray;
+  background-image: url(images/background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/** header::before {
+  content: "";
+  background: url(images/background.png);
+} **/
