@@ -17,6 +17,10 @@
   color: #2a2626;
 }
 
+.orange-font-color {
+  color: #fe8a02;
+}
+
 .h1-font {
   font: 72px/1.2em neucha, sans-serif;
 }
@@ -29,6 +33,56 @@
   font: 34px/1.2em neucha, sans-serif;
 }
 
+/** HEADER **/
+header {
+  height: 1005px;
+}
+
+header > h1 {
+  position: absolute;
+  top: 121px;
+  left: 165px;
+  z-index: 300;
+}
+
+header > img {
+  position: absolute;
+  top: 100px;
+  left: 470px;
+  width: 952px;
+  height: 444px;
+  z-index: 200;
+}
+
+.header-p-1 {
+  position: absolute;
+  top: 604px;
+  left: 165px;
+  width: 540px;
+  height: 130px;
+}
+
+.header-p-2 {
+  position: absolute;
+  top: 604px;
+  left: 735px;
+  width: 540px;
+  height: 166px;
+}
+
+/** ФОН ДЛЯ СЕКЦИЙ **/
+.bg-before:before {
+  position: absolute;
+  display: block;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 10%;
+  width: 1440px;
+  height: 1005px;
+  background: url(../../images/background.png);
+  content: "";
+}
+
 /** SECTION **/
 .section {
   max-width: 1110px;
@@ -37,15 +91,20 @@
   /** + выравнивание по центру **/
 }
 
-header {
-  height: 600px;
-  background-color: yellow;
-  background-image: url(../../images/background.png);
-  background-repeat: no-repeat;
-  background-size: cover;
+/** КНОПКА **/
+.button {
+  width: 149px;
+  height: 48px;
+  background: #fe8a02;
+  color: white;
+  padding: 11px 24px 11px 24px;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
 }
 
-/** header::before {
-  content: "";
-  background: url(images/background.png);
-} **/
+/** ОБЩИЙ ФОН **/
+.white-background {
+  background: white;
+}
