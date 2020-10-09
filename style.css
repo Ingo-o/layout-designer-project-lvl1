@@ -1,12 +1,12 @@
 /** FONTS **/
 @font-face {
-  font-family: neucha;
-  src: url(fonts/Neucha-Regular.ttf);
+  font-family: Neucha;
+  src: url(../../fonts/Neucha-Regular.ttf);
 }
 
 @font-face {
-  font-family: open-sans;
-  src: url(fonts/OpenSans-Regular.ttf);
+  font-family: "open sans";
+  src: url(../../fonts/OpenSans-Regular.ttf);
 }
 
 .content-font {
@@ -39,9 +39,8 @@
 
 header {
   height: 600px;
-
-  background-color: gray;
-  background-image: url(images/background.png);
+  background-color: yellow;
+  background-image: url(../../images/background.png);
   background-repeat: no-repeat;
   background-size: cover;
 }
