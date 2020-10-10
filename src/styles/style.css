@@ -54,6 +54,12 @@ header > img {
   z-index: 200;
 }
 
+header > div {
+  position: absolute;
+  top: 800px;
+  left: 735px;
+}
+
 .header-p-1 {
   position: absolute;
   top: 604px;
@@ -93,18 +99,15 @@ header > img {
 
 /** КНОПКА **/
 .button {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
   width: 149px;
   height: 48px;
   background: #fe8a02;
   color: white;
   padding: 11px 24px 11px 24px;
-  font-family: "Open Sans";
-  font-style: normal;
-  font-weight: bold;
-  font-size: 16px;
-}
-
-/** ОБЩИЙ ФОН **/
-.white-background {
-  background: white;
+  font: 16px "Open Sans";
+  font-weight: 700;
+  text-align: center;
 }
