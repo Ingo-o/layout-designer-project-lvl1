@@ -1,92 +1,129 @@
+/** BODY **/
+body {
+  width: 1440px;
+  position: relative;
+  left: 50%;
+  margin-left: -720px;
+  margin-top: 0;
+  margin-bottom: 0;
+
+  box-sizing: border-box;
+
+  border: 1px solid; /** For dev only **/
+
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  line-height: 1.6em;
+  color: #2a2626;
+}
+
 /** FONTS **/
 @font-face {
-  font-family: Neucha;
+  font-family: "Neucha";
   src: url(../../fonts/Neucha-Regular.ttf);
 }
 
 @font-face {
-  font-family: "open sans";
+  font-family: "Open Sans";
   src: url(../../fonts/OpenSans-Regular.ttf);
-}
-
-.content-font {
-  font: 16px/1.6em "open sans", sans-serif;
-}
-
-.main-font-color {
-  color: #2a2626;
 }
 
 .orange-font-color {
   color: #fe8a02;
 }
 
-.h1-font {
-  font: 72px/1.2em neucha, sans-serif;
+h1,
+h2,
+h3 {
+  font-family: "Neucha", sans-serif;
+  font-weight: normal;
+  line-height: 1.2em;
 }
 
-.h2-font {
-  font: 60px/1.2em neucha, sans-serif;
+h1 {
+  font-size: 72px;
 }
 
-.h3-font {
-  font: 34px/1.2em neucha, sans-serif;
+h2 {
+  font-size: 60px;
+}
+
+h3 {
+  font-size: 34px;
 }
 
 /** HEADER **/
 header {
-  height: 1005px;
+  height: 950px;
 }
 
 header > h1 {
   position: absolute;
-  top: 121px;
+  top: 90px;
   left: 165px;
-  z-index: 300;
+  z-index: 200;
 }
 
 header > img {
   position: absolute;
-  top: 100px;
-  left: 470px;
-  width: 952px;
-  height: 444px;
-  z-index: 200;
+  top: 55px;
+  right: -110px;
+  height: 525px;
+  z-index: 100;
 }
 
 header > div {
+  /** button **/
   position: absolute;
-  top: 800px;
+  top: 780px;
   left: 735px;
+  z-index: 200;
 }
 
 .header-p-1 {
   position: absolute;
-  top: 604px;
+  top: 560px;
   left: 165px;
   width: 540px;
-  height: 130px;
+  z-index: 200;
 }
 
 .header-p-2 {
   position: absolute;
-  top: 604px;
+  top: 560px;
   left: 735px;
   width: 540px;
-  height: 166px;
+  z-index: 200;
 }
 
-/** ФОН ДЛЯ СЕКЦИЙ **/
+/** BACKGROUNDS **/
 .bg-before:before {
-  position: absolute;
   display: block;
+  background: url(../../images/background.png);
   background-repeat: no-repeat;
   background-size: cover;
   opacity: 10%;
-  width: 1440px;
-  height: 1005px;
-  background: url(../../images/background.png);
+  width: 100%;
+  height: 100%;
   content: "";
+}
+
+.background-light {
+  background-color: #f5f4f0;
+}
+
+/** BUTTONS **/
+.button {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 11px 24px 11px 24px;
+  width: 100px;
+  height: 25px;
+  background: #fe8a02;
+  color: white;
+  font-weight: 700;
 }
 
 /** SECTION **/
@@ -95,19 +132,4 @@ header > div {
   margin: 100px 0 100px 0; /** внешние - сверху, справа, снизу, слева (возможно нужен padding) **/
 
   /** + выравнивание по центру **/
-}
-
-/** КНОПКА **/
-.button {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  width: 149px;
-  height: 48px;
-  background: #fe8a02;
-  color: white;
-  padding: 11px 24px 11px 24px;
-  font: 16px "Open Sans";
-  font-weight: 700;
-  text-align: center;
 }
