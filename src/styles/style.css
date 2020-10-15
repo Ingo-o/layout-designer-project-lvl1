@@ -7,8 +7,6 @@ body {
   margin-top: 0;
   margin-bottom: 0;
 
-  box-sizing: border-box;
-
   border: 1px solid; /** For dev only **/
 
   font-family: "Open Sans", sans-serif;
@@ -58,14 +56,14 @@ header {
   height: 950px;
 }
 
-header > h1 {
+.header-title {
   position: absolute;
   top: 90px;
   left: 165px;
   z-index: 200;
 }
 
-header > img {
+.header-image {
   position: absolute;
   top: 55px;
   right: -110px;
@@ -73,15 +71,25 @@ header > img {
   z-index: 100;
 }
 
-header > div {
-  /** button **/
+.header-button {
   position: absolute;
   top: 787px;
   left: 721px;
   z-index: 200;
+
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 11px 24px 11px 24px;
+  width: 100px;
+  height: 25px;
+  background: #fe8a02;
+  color: white;
+  font-weight: 700;
 }
 
-header > p {
+.header-text {
   column-count: 2;
   column-gap: 30px;
   position: absolute;
@@ -96,14 +104,14 @@ main {
   position: relative;
 }
 
-main > h2 {
+.main-title {
   text-align-last: center;
   text-align: center;
   position: relative;
   top: 60px;
 }
 
-main > p {
+.main-text {
   text-align: center;
   position: relative;
   top: 55px;
@@ -118,6 +126,7 @@ main > p {
   filter: drop-shadow(0 16px 32px rgba(0, 0, 0, 0.15));
 }
 
+/** NAV **/
 nav {
   display: flex;
   justify-content: center;
@@ -140,15 +149,35 @@ nav {
   margin: 0;
 }
 
-.nav-number {
-  position: absolute;
-  top: 1px;
-  left: 24px;
-  font-size: 64px;
-}
-
 .numbered-elem {
   background-color: #f5f4f0;
+  position: relative;
+  height: 262px;
+  width: 302px;
+  padding: 24px;
+}
+
+.nav-number {
+  margin: 0;
+  font-size: 54px;
+}
+
+.nav-sub-title {
+  margin: 0;
+  margin: 15px 0 0 0;
+}
+
+.nav-text {
+  margin: 3px 0 7px 0;
+}
+
+.animation:hover {
+  background: #fe8a02;
+  color: white;
+}
+
+.animation:hover span {
+  color: white;
 }
 
 /** BACKGROUNDS **/
@@ -165,20 +194,6 @@ nav {
 
 .background-light {
   background-color: #f5f4f0;
-}
-
-/** BUTTONS **/
-.button {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  text-align: center;
-  padding: 11px 24px 11px 24px;
-  width: 100px;
-  height: 25px;
-  background: #fe8a02;
-  color: white;
-  font-weight: 700;
 }
 
 /** SECTION **/
