@@ -32,7 +32,8 @@ body {
 
 h1,
 h2,
-h3 {
+h3,
+h4 {
   font-family: "Neucha", sans-serif;
   font-weight: normal;
   line-height: 1.2em;
@@ -48,6 +49,10 @@ h2 {
 
 h3 {
   font-size: 34px;
+}
+
+h4 {
+  font-size: 24px;
 }
 
 /** HEADER **/
@@ -152,7 +157,7 @@ nav {
 .numbered-elem {
   background-color: #f5f4f0;
   position: relative;
-  height: 262px;
+  height: 270px;
   width: 302px;
   padding: 24px;
 }
@@ -196,12 +201,134 @@ nav {
   background-color: #f5f4f0;
 }
 
-/** SECTION **/
-.section {
-  position: relative;
-  height: 950px;
-  max-width: 1110px;
-  margin: 100px 0 100px 0; /** внешние - сверху, справа, снизу, слева (возможно нужен padding) **/
+.background-dark {
+  background: #b09a81;
+}
 
-  /** + выравнивание по центру **/
+/** SECTION **/
+section {
+  position: relative;
+  height: 860px;
+}
+
+.section-img-shadow {
+  filter: drop-shadow(0 16px 32px rgba(0, 0, 0, 0.15));
+}
+
+/** LIGHT SECTION **/
+.light-section-img {
+  position: absolute;
+  top: 100px;
+  left: 150px;
+  width: 540px;
+}
+
+.light-section-h4 {
+  position: absolute;
+  top: 100px;
+  left: 735px;
+  margin: 0;
+  color: #908d8b;
+}
+
+.light-section-h2 {
+  position: absolute;
+  top: 140px;
+  left: 735px;
+  margin: 0;
+}
+
+.light-section-h3 {
+  position: absolute;
+  top: 240px;
+  left: 735px;
+  margin: 0;
+}
+
+.light-section-line {
+  position: absolute;
+  width: 1140px;
+  height: 30px;
+  left: 150px;
+  top: 577px;
+
+  color: white;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+  padding: 0 0 0 12px;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.light-section-text {
+  column-count: 2;
+  column-gap: 30px;
+  position: absolute;
+  margin: 0;
+  top: 630px;
+  left: 150px;
+  width: 1140px;
+}
+
+/** DARK SECTION **/
+.dark-section-img {
+  position: absolute;
+  top: 100px;
+  left: 735px;
+  width: 540px;
+}
+
+.dark-section-h4 {
+  position: absolute;
+  top: 100px;
+  left: 150px;
+  margin: 0;
+  color: white;
+}
+
+.dark-section-h2 {
+  position: absolute;
+  top: 140px;
+  left: 150px;
+  margin: 0;
+  color: white;
+}
+
+.dark-section-h3 {
+  position: absolute;
+  top: 312px;
+  left: 150px;
+  margin: 0;
+  color: white;
+}
+
+.dark-section-line {
+  position: absolute;
+  width: 1140px;
+  height: 30px;
+  left: 150px;
+  top: 577px;
+
+  background-color: white;
+  color: black;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+  padding: 0 0 0 12px;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.dark-section-text {
+  column-count: 2;
+  column-gap: 30px;
+  position: absolute;
+  margin: 0;
+  top: 630px;
+  left: 150px;
+  width: 1140px;
+  color: white;
 }
