@@ -1,4 +1,4 @@
-/** BODY **/
+/** BODY and LINKS **/
 body {
   width: 1440px;
   position: relative;
@@ -12,6 +12,11 @@ body {
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
   line-height: 1.6em;
+  color: #2a2626;
+}
+
+.link {
+  text-decoration: none;
   color: #2a2626;
 }
 
@@ -198,7 +203,7 @@ nav {
 }
 
 .background-light {
-  background-color: #f5f4f0;
+  background: #f5f4f0;
 }
 
 .background-dark {
@@ -252,6 +257,7 @@ section {
   left: 150px;
   top: 577px;
 
+  background: #b09a81;
   color: white;
   display: flex;
   justify-content: center;
@@ -311,7 +317,7 @@ section {
   left: 150px;
   top: 577px;
 
-  background-color: white;
+  background: white;
   color: black;
   display: flex;
   justify-content: center;
