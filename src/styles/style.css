@@ -7,8 +7,6 @@ body {
   margin-top: 0;
   margin-bottom: 0;
 
-  border: 1px solid; /** For dev only **/
-
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
   line-height: 1.6em;
@@ -337,4 +335,46 @@ section {
   left: 150px;
   width: 1140px;
   color: white;
+}
+
+/** FOOTER **/
+footer {
+  position: relative;
+  height: 600px;
+}
+
+.mail-form {
+  position: absolute;
+  height: 196px;
+  width: 1110px;
+  left: 165px;
+  top: 105px;
+
+  background: #42413c;
+}
+
+.mail-input-field {
+  position: absolute;
+  left: 570px;
+  top: 80px;
+  height: 20px;
+  padding: 15px;
+  font-size: 17px;
+}
+
+.footer-title {
+  position: absolute;
+  left: 52px;
+  top: 58px;
+  margin: 0;
+  color: white;
+  font-size: 36px;
+}
+
+.footer-text {
+  text-align: center;
+  position: relative;
+  top: 395px;
+
+  line-height: 2.5em;
 }
