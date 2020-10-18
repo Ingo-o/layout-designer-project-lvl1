@@ -1,4 +1,4 @@
-/** BODY and LINKS **/
+/** BODY **/
 body {
   width: 1440px;
   position: relative;
@@ -10,11 +10,6 @@ body {
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
   line-height: 1.6em;
-  color: #2a2626;
-}
-
-.link {
-  text-decoration: none;
   color: #2a2626;
 }
 
@@ -188,6 +183,11 @@ nav {
   color: white;
 }
 
+.nav-link {
+  text-decoration: none;
+  color: #2a2626;
+}
+
 /** BACKGROUNDS **/
 .bg-before:before {
   display: block;
@@ -357,6 +357,7 @@ footer {
   position: absolute;
   left: 570px;
   top: 80px;
+  width: 331px;
   height: 20px;
   padding: 15px;
   font-size: 17px;
@@ -377,4 +378,51 @@ footer {
   top: 395px;
 
   line-height: 2.5em;
+}
+
+.footer-button {
+  position: absolute;
+  top: 80px;
+  left: 935px;
+
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-left: 0;
+  margin-right: 0;
+  width: 80px;
+  height: 54px;
+  background: #fe8a02;
+  color: white;
+}
+
+.footer-button::before {
+  display: block;
+  margin: 0 auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background: url(images/send.svg);
+  width: 25px;
+  height: 25px;
+  content: "";
+}
+
+.footer-email-title {
+  position: absolute;
+  top: 33px;
+  left: 571px;
+  color: white;
+  font-weight: 700;
+}
+
+.footer-rules {
+  position: absolute;
+  top: 124px;
+  left: 571px;
+  font-size: 13px;
+  color: white;
+}
+
+.footer-link {
+  color: white;
 }
