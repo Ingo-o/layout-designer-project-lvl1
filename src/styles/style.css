@@ -1,12 +1,9 @@
 /** BODY **/
 body {
   position: relative;
-  left: 50%;
 
   width: 1440px;
-  margin-top: 0;
-  margin-bottom: 0;
-  margin-left: -720px;
+  margin: 0 auto;
 
   color: #2a2626;
   font-size: 16px;
@@ -55,7 +52,7 @@ h4 {
 }
 
 /** HEADER **/
-header {
+.header {
   position: relative;
 
   height: 950px;
@@ -234,7 +231,7 @@ nav {
 }
 
 /** SECTION **/
-section {
+.section {
   position: relative;
 
   height: 860px;
@@ -384,7 +381,7 @@ section {
 }
 
 /** FOOTER **/
-footer {
+.footer {
   position: relative;
 
   height: 600px;
