@@ -11,61 +11,6 @@ body {
   line-height: 1.6em;
 }
 
-/** HEADER **/
-.header {
-  position: relative;
-
-  width: 1110px;
-
-  margin: 0 auto;
-  padding: 100px 165px 100px 165px;
-}
-
-.header-title {
-  position: relative;
-  z-index: 200;
-}
-
-.header-image {
-  position: absolute;
-  top: 30px;
-  left: 465px;
-  z-index: 100;
-
-  height: 525px;
-}
-
-.header-text {
-  margin-top: 190px;
-
-  column-count: 2;
-  column-gap: 30px;
-}
-
-.header-button {
-  position: relative;
-  left: 570px;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 110px;
-  height: 25px;
-  margin-top: 35px;
-  padding: 12px 24px 12px 24px;
-  font-size: 17px;
-
-  color: white;
-  font-weight: 700;
-  text-align: center;
-
-  background: #fe8a02;
-}
-
-.header-link {
-  text-decoration: none;
-}
-
 /** BACKGROUNDS **/
 .bg-before {
   position: relative;
@@ -93,6 +38,10 @@ body {
 
 .background-dark {
   background: #b09a81;
+}
+
+.background-very-dark {
+  background: #42413c;
 }
 
 /** FONTS **/
@@ -133,4 +82,275 @@ h3 {
 
 h4 {
   font-size: 24px;
+}
+
+/** HEADER **/
+.header {
+  position: relative;
+
+  width: 1110px;
+
+  margin: 0 auto;
+  padding: 100px 165px 100px 165px;
+}
+
+.header-title {
+  position: relative;
+  z-index: 200;
+}
+
+.header-image {
+  position: absolute;
+  top: 35px;
+  left: 465px;
+  z-index: 100;
+
+  height: 525px;
+}
+
+.header-text {
+  margin-top: 190px;
+
+  column-count: 2;
+  column-gap: 30px;
+}
+
+.header-button {
+  position: relative;
+  left: 570px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 110px;
+  height: 25px;
+  margin-top: 35px;
+  padding: 12px 24px 12px 24px;
+
+  color: white;
+  font-weight: 700;
+  font-size: 17px;
+  text-align: center;
+
+  background: #fe8a02;
+}
+
+.header-link {
+  text-decoration: none;
+}
+
+/** MAIN **/
+main {
+  position: relative;
+}
+
+.main-title {
+  margin-top: 100px;
+
+  text-align: center;
+  text-align-last: center;
+}
+
+.main-text {
+  margin-top: 25px;
+
+  text-align: center;
+}
+
+.video {
+  position: relative;
+
+  z-index: 200;
+
+  display: block;
+  width: 928px; /** 16 **/
+  height: 522px; /** 9 **/
+  margin-top: 30px;
+  margin-right: auto;
+  margin-left: auto;
+
+  border: none;
+
+  filter: drop-shadow(0 16px 32px rgba(0, 0, 0, 0.15));
+}
+
+/** NAV **/
+nav {
+  position: relative;
+  top: -100px;
+  z-index: 100;
+}
+
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  width: 1110px;
+
+  margin: 0 auto;
+  padding: 200px 165px 100px 165px;
+}
+
+.nav-elem {
+  width: 350px;
+  height: 318px;
+  margin: 8px 8px 8px 8px;
+}
+
+.nav-title {
+  color: white;
+
+  font-size: 52px;
+}
+
+.numbered-elem {
+  width: 302px;
+  height: 270px;
+  padding: 24px;
+
+  background-color: #f5f4f0;
+}
+
+.nav-number {
+  font-size: 54px;
+}
+
+.nav-sub-title {
+  margin-top: 15px;
+}
+
+.nav-text {
+  margin-top: 5px;
+}
+
+.animation:hover {
+  color: white;
+
+  background: #fe8a02;
+}
+
+.animation:hover span {
+  color: white;
+}
+
+.nav-link {
+  color: #2a2626;
+  text-decoration: none;
+}
+
+/** SECTION **/
+section {
+  position: relative;
+  top: -100px;
+}
+
+.section {
+  position: relative;
+
+  width: 1110px;
+
+  margin: 0 auto;
+  padding: 100px 165px 100px 165px;
+}
+
+.section-img-shadow {
+  filter: drop-shadow(0 16px 32px rgba(0, 0, 0, 0.15));
+}
+
+/** LIGHT SECTION **/
+.light-section-img {
+  width: 540px;
+}
+
+.light-section-h4 {
+  position: absolute;
+  top: 100px;
+  left: 750px;
+
+  color: #908d8b;
+}
+
+.light-section-h2 {
+  position: absolute;
+  top: 135px;
+  left: 750px;
+}
+
+.light-section-h3 {
+  position: absolute;
+  top: 240px;
+  left: 750px;
+}
+
+.light-section-line {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 1098px;
+  height: 30px;
+
+  margin-top: 100px;
+  padding-left: 12px;
+
+  color: white;
+  font-weight: 700;
+
+  background: #b09a81;
+}
+
+.light-section-text {
+  margin-top: 20px;
+
+  column-count: 2;
+  column-gap: 30px;
+}
+
+/** DARK SECTION **/
+.dark-section-img {
+  position: absolute;
+  left: 735px;
+
+  width: 540px;
+}
+
+.dark-section-h4 {
+  color: white;
+}
+
+.dark-section-h2 {
+  margin-top: 10px;
+
+  color: white;
+}
+
+.dark-section-h3 {
+  margin-top: 32px;
+
+  color: white;
+}
+
+.dark-section-line {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 1098px;
+  height: 30px;
+
+  margin-top: 180px;
+  padding-left: 12px;
+
+  color: black;
+  font-weight: 700;
+
+  background: white;
+}
+
+.dark-section-text {
+  margin-top: 20px;
+
+  color: white;
+
+  column-count: 2;
+  column-gap: 30px;
 }
