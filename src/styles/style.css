@@ -11,6 +11,12 @@ body {
   line-height: 1.6em;
 }
 
+.container {
+  width: 1110px;
+
+  margin: 0 auto;
+}
+
 /** BACKGROUNDS **/
 .bg-before {
   position: relative;
@@ -88,10 +94,8 @@ h4 {
 .header {
   position: relative;
 
-  width: 1110px;
-
-  margin: 0 auto;
-  padding: 100px 165px 100px 165px;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 .header-title {
@@ -102,7 +106,7 @@ h4 {
 .header-image {
   position: absolute;
   top: 35px;
-  left: 465px;
+  left: 300px;
   z-index: 100;
 
   height: 525px;
@@ -129,6 +133,7 @@ h4 {
 
   color: white;
   font-weight: 700;
+  text-transform: uppercase;
   font-size: 17px;
   text-align: center;
 
@@ -186,10 +191,8 @@ nav {
   flex-wrap: wrap;
   justify-content: center;
 
-  width: 1110px;
-
-  margin: 0 auto;
-  padding: 200px 165px 100px 165px;
+  padding-top: 200px;
+  padding-bottom: 100px;
 }
 
 .nav-elem {
@@ -213,6 +216,9 @@ nav {
 }
 
 .nav-number {
+  font-weight: normal;
+  font-family: "Neucha", sans-serif;
+  line-height: 1.2em;
   font-size: 54px;
 }
 
@@ -251,10 +257,8 @@ section {
   display: flex;
   flex-wrap: wrap;
 
-  width: 1110px;
-
-  margin: 0 auto;
-  padding: 100px 165px 100px 165px;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 .section-img-shadow {
@@ -270,7 +274,11 @@ section {
   margin-left: 50px;
 }
 
-.light-section-h4 {
+.light-section-pre-title {
+  font-weight: normal;
+  font-family: "Neucha", sans-serif;
+  line-height: 1.2em;
+  font-size: 24px;
   color: #908d8b;
 }
 
@@ -278,7 +286,11 @@ section {
   margin-top: 10px;
 }
 
-.light-section-h3 {
+.light-section-post-title {
+  font-weight: normal;
+  font-family: "Neucha", sans-serif;
+  line-height: 1.2em;
+  font-size: 34px;
   margin-top: 30px;
 }
 
@@ -294,6 +306,7 @@ section {
 
   color: white;
   font-weight: 700;
+  text-transform: uppercase;
 
   background: #b09a81;
 }
@@ -306,13 +319,19 @@ section {
 }
 
 /** DARK SECTION **/
-.dark-section-img {
-  width: 540px;
-
-  margin-left: 50px;
+.dark-flex {
+  justify-content: space-between;
 }
 
-.dark-section-h4 {
+.dark-section-img {
+  width: 540px;
+}
+
+.dark-section-pre-title {
+  font-weight: normal;
+  font-family: "Neucha", sans-serif;
+  line-height: 1.2em;
+  font-size: 24px;
   color: white;
 }
 
@@ -322,9 +341,13 @@ section {
   color: white;
 }
 
-.dark-section-h3 {
+.dark-section-post-title {
   margin-top: 30px;
 
+  font-weight: normal;
+  font-family: "Neucha", sans-serif;
+  line-height: 1.2em;
+  font-size: 34px;
   color: white;
 }
 
@@ -340,6 +363,7 @@ section {
 
   color: black;
   font-weight: 700;
+  text-transform: uppercase;
 
   background: white;
 }
@@ -358,10 +382,7 @@ section {
   position: relative;
   top: -100px;
 
-  width: 1110px;
-
-  margin: 0 auto;
-  padding: 100px 165px 0 165px;
+  padding-top: 100px;
 }
 
 .footer-dark-block {
