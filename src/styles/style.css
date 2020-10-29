@@ -21,6 +21,10 @@ body {
   margin: 0 auto;
 }
 
+.no-link-decoration {
+  text-decoration: none;
+}
+
 /** BACKGROUNDS **/
 .bg-before {
   position: relative;
@@ -85,12 +89,12 @@ body {
   color: #908d8b;
 }
 
-.black-font-color {
-  color: black;
+.dark-grey-font-color {
+  color: #2a2626;
 }
 
-.nav-link-font-color {
-  color: #2a2626;
+.black-font-color {
+  color: black;
 }
 
 h1,
@@ -128,8 +132,6 @@ h4 {
 }
 
 .header-title {
-  position: relative;
-
   z-index: 200;
 
   width: 1110px;
@@ -166,10 +168,6 @@ h4 {
   font-size: 17px;
   text-align: center;
   text-transform: uppercase;
-}
-
-.header-link {
-  text-decoration: none;
 }
 
 /** MAIN **/
@@ -219,7 +217,7 @@ nav {
   padding-bottom: 100px;
 }
 
-.nav-elem {
+.nav-title-elem {
   width: 350px;
   height: 318px;
   margin: 11px 8px 11px 8px;
@@ -229,9 +227,10 @@ nav {
   font-size: 52px;
 }
 
-.numbered-elem {
+.nav-numbered-elem {
   width: 302px;
   height: 270px;
+  margin: 11px 8px 11px 8px;
   padding: 24px;
 }
 
@@ -260,10 +259,6 @@ nav {
   color: white;
 }
 
-.nav-link {
-  text-decoration: none;
-}
-
 /** SECTION **/
 section {
   position: relative;
@@ -271,8 +266,6 @@ section {
 }
 
 .section {
-  position: relative;
-
   padding-top: 100px;
   padding-bottom: 100px;
 }
@@ -329,8 +322,6 @@ section {
 }
 
 .footer-dark-block {
-  position: relative;
-
   display: flex;
 
   justify-content: space-between;
@@ -342,8 +333,6 @@ section {
 }
 
 .footer-title {
-  position: relative;
-
   margin-top: auto;
   margin-bottom: auto;
 
@@ -399,8 +388,6 @@ section {
 }
 
 .footer-text {
-  position: relative;
-
   width: 1110px;
 
   margin-top: 60px;
