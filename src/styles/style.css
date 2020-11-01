@@ -277,6 +277,8 @@ section {
 }
 
 .section-titles-block {
+  flex-grow: 1;
+
   width: 535px;
 }
 
@@ -311,6 +313,14 @@ section {
 .section-text {
   width: 535px;
   margin-top: 20px;
+}
+
+.margin-right-40 {
+  margin-right: 40px;
+}
+
+.margin-left-40 {
+  margin-left: 40px;
 }
 
 /** FOOTER **/
