@@ -271,13 +271,13 @@ nav {
 }
 
 .animation:hover {
-  color: white;
+  color: var(--white);
 
-  background: #fe8a02;
+  background: var(--orange);
 }
 
 .animation:hover span {
-  color: white;
+  color: var(--white);
 }
 
 /** SECTION **/
