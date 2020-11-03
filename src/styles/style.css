@@ -1,4 +1,4 @@
-/** BODY and BASIS **/
+/** BASIS **/
 * {
   margin: 0;
   padding: 0;
@@ -21,18 +21,132 @@ body {
   width: 1110px;
 
   margin: 0 auto;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.text-block {
+  width: calc(50% - 20px);
+}
+
+.text-align-center {
+  text-align: center;
 }
 
 .no-link-decoration {
   text-decoration: none;
 }
 
+/** MARGINS and PADDINGS **/
 .margin-right-40 {
   margin-right: 40px;
 }
 
 .margin-left-40 {
   margin-left: 40px;
+}
+
+.margin-top-5 {
+  margin-top: 5px;
+}
+
+.margin-top-10 {
+  margin-top: 10px;
+}
+
+.margin-top-15 {
+  margin-top: 15px;
+}
+
+.margin-top-20 {
+  margin-top: 20px;
+}
+
+.margin-top-25 {
+  margin-top: 25px;
+}
+
+.margin-top-30 {
+  margin-top: 30px;
+}
+
+.margin-top-100 {
+  margin-top: 100px;
+}
+
+.margin-top-190 {
+  margin-top: 190px;
+}
+
+.padding-top-0 {
+  padding-top: 0;
+}
+
+.padding-top-200 {
+  padding-top: 200px;
+}
+
+/** TITLES **/
+h1,
+.h1 {
+  font-weight: normal;
+  font-size: 72px;
+  font-family: "Neucha", sans-serif;
+  line-height: 1.2em;
+}
+
+h2,
+.h2 {
+  font-weight: normal;
+  font-size: 60px;
+  font-family: "Neucha", sans-serif;
+  line-height: 1.2em;
+}
+
+h3,
+.h3 {
+  font-weight: normal;
+  font-size: 34px;
+  font-family: "Neucha", sans-serif;
+  line-height: 1.2em;
+}
+
+.h3-section {
+  font-weight: 700;
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.6em;
+}
+
+h4,
+.h4 {
+  font-weight: normal;
+  font-size: 24px;
+  font-family: "Neucha", sans-serif;
+  line-height: 1.2em;
+}
+
+/** FONTS **/
+@font-face {
+  font-family: "Neucha";
+  src: url(fonts/Neucha-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url(fonts/OpenSans-Regular.ttf);
+}
+
+.font-size-13 {
+  font-size: 13px;
+}
+
+.font-size-52 {
+  font-size: 52px;
+}
+
+.font-size-54 {
+  font-size: 54px;
 }
 
 /** COLORS **/
@@ -48,23 +162,23 @@ body {
 }
 
 /** font colors **/
-.orange-font-color {
+.font-orange {
   color: var(--orange);
 }
 
-.white-font-color {
+.font-white {
   color: var(--white);
 }
 
-.grey-font-color {
+.font-grey {
   color: var(--grey);
 }
 
-.dark-grey-font-color {
+.font-dark-grey {
   color: var(--dark-grey);
 }
 
-.black-font-color {
+.font-black {
   color: var(--black);
 }
 
@@ -110,55 +224,11 @@ body {
   content: "";
 }
 
-/** FONTS **/
-@font-face {
-  font-family: "Neucha";
-  src: url(fonts/Neucha-Regular.ttf);
-}
-
-@font-face {
-  font-family: "Open Sans";
-  src: url(fonts/OpenSans-Regular.ttf);
-}
-
-h1,
-h2,
-h3,
-h4,
-.title-style {
-  font-weight: normal;
-  font-family: "Neucha", sans-serif;
-  line-height: 1.2em;
-}
-
-h1 {
-  font-size: 72px;
-}
-
-h2 {
-  font-size: 60px;
-}
-
-h3 {
-  font-size: 34px;
-}
-
-h4 {
-  font-size: 24px;
-}
-
 /** HEADER **/
-.header {
-  position: relative;
-
-  padding-top: 100px;
-  padding-bottom: 100px;
-}
-
 .header-title {
   z-index: 200;
 
-  width: 1110px;
+  width: 100%;
 }
 
 .header-image {
@@ -168,12 +238,6 @@ h4 {
   z-index: 100;
 
   height: 525px;
-}
-
-.header-text-block {
-  width: calc(50% - 20px);
-
-  margin-top: 190px;
 }
 
 .header-button {
@@ -192,23 +256,6 @@ h4 {
 }
 
 /** MAIN **/
-main {
-  position: relative;
-}
-
-.main-title {
-  margin-top: 100px;
-
-  text-align: center;
-  text-align-last: center;
-}
-
-.main-text {
-  margin-top: 25px;
-
-  text-align: center;
-}
-
 .video {
   position: relative;
 
@@ -233,19 +280,10 @@ nav {
   z-index: 100;
 }
 
-.nav {
-  padding-top: 200px;
-  padding-bottom: 100px;
-}
-
 .nav-title-elem {
   width: 350px;
   height: 318px;
   margin: 11px 8px 11px 8px;
-}
-
-.nav-title {
-  font-size: 52px;
 }
 
 .nav-numbered-elem {
@@ -253,21 +291,6 @@ nav {
   height: 270px;
   margin: 11px 8px 11px 8px;
   padding: 24px;
-}
-
-.nav-number {
-  font-weight: normal;
-  font-size: 54px;
-  font-family: "Neucha", sans-serif;
-  line-height: 1.2em;
-}
-
-.nav-sub-title {
-  margin-top: 15px;
-}
-
-.nav-text {
-  margin-top: 5px;
 }
 
 .animation:hover {
@@ -286,11 +309,6 @@ section {
   top: -100px;
 }
 
-.section {
-  padding-top: 100px;
-  padding-bottom: 100px;
-}
-
 .section-img {
   width: calc(50% - 20px);
 
@@ -301,20 +319,6 @@ section {
   flex-grow: 1;
 
   width: calc(50% - 20px);
-}
-
-.section-pre-title {
-  font-size: 24px;
-}
-
-.section-title {
-  margin-top: 10px;
-}
-
-.section-post-title {
-  margin-top: 30px;
-
-  font-size: 34px;
 }
 
 .section-line {
@@ -331,16 +335,7 @@ section {
   text-transform: uppercase;
 }
 
-.section-text {
-  width: calc(50% - 20px);
-  margin-top: 20px;
-}
-
 /** FOOTER **/
-.footer {
-  padding-bottom: 100px;
-}
-
 .footer-dark-block {
   display: flex;
 
@@ -401,10 +396,6 @@ section {
   margin-bottom: 8px;
 
   font-weight: 700;
-}
-
-.footer-rules {
-  font-size: 13px;
 }
 
 .footer-text {
