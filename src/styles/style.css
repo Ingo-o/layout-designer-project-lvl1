@@ -25,7 +25,9 @@ body {
   padding-bottom: 100px;
 }
 
-.text-block {
+.half-block {
+  flex-grow: 1;
+
   width: calc(50% - 20px);
 }
 
@@ -35,6 +37,14 @@ body {
 
 .no-link-decoration {
   text-decoration: none;
+}
+
+.z-index-200 {
+  z-index: 200;
+}
+
+.z-index-100 {
+  z-index: 100;
 }
 
 /** MARGINS and PADDINGS **/
@@ -225,25 +235,15 @@ h4,
 }
 
 /** HEADER **/
-.header-title {
-  z-index: 200;
-
-  width: 100%;
-}
-
 .header-image {
   position: absolute;
   top: 35px;
   left: 300px;
-  z-index: 100;
 
   height: 525px;
 }
 
 .header-button {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   width: 110px;
   height: 25px;
   margin-top: 35px;
@@ -258,8 +258,6 @@ h4,
 /** MAIN **/
 .video {
   position: relative;
-
-  z-index: 200;
 
   display: block;
   width: 928px; /** 16 **/
@@ -277,7 +275,6 @@ h4,
 nav {
   position: relative;
   top: -100px;
-  z-index: 100;
 }
 
 .nav-title-elem {
@@ -313,12 +310,6 @@ section {
   width: calc(50% - 20px);
 
   filter: drop-shadow(0 16px 32px rgba(0, 0, 0, 0.15));
-}
-
-.section-titles-block {
-  flex-grow: 1;
-
-  width: calc(50% - 20px);
 }
 
 .section-line {
