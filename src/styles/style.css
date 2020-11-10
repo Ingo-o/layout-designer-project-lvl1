@@ -35,6 +35,10 @@ body {
   text-align: center;
 }
 
+.text-align-left {
+  text-align: left;
+}
+
 .no-link-decoration {
   text-decoration: none;
 }
@@ -45,6 +49,10 @@ body {
 
 .z-index-100 {
   z-index: 100;
+}
+
+.display-block {
+  display: block;
 }
 
 /** MARGINS and PADDINGS **/
@@ -262,8 +270,6 @@ h4,
   width: 928px; /** 16 **/
   height: 522px; /** 9 **/
   margin-top: 30px;
-  margin-right: auto;
-  margin-left: auto;
 
   border: none;
 
@@ -278,15 +284,15 @@ nav {
 
 .nav-title-elem {
   width: 350px;
-  height: 318px;
+
   margin: 11px 8px 11px 8px;
 }
 
 .nav-numbered-elem {
   width: 302px;
-  height: 270px;
+
   margin: 11px 8px 11px 8px;
-  padding: 24px;
+  padding: 24px 24px 40px 24px;
 }
 
 .animation:hover {
@@ -315,9 +321,9 @@ section {
   width: 100%;
 
   margin-top: 100px;
-  padding-left: 12px;
   padding-top: 2px;
   padding-bottom: 2px;
+  padding-left: 12px;
 
   font-weight: 700;
   text-transform: uppercase;
@@ -329,10 +335,9 @@ section {
 
   justify-content: space-between;
 
-  width: 1010px;
+  width: 100%;
 
-  margin: 0 auto;
-  padding: 50px 50px 50px 50px;
+  padding: 50px;
 }
 
 .footer-title {
@@ -368,9 +373,8 @@ section {
 }
 
 .footer-button::before {
-  display: block;
-  width: 25px;
-  height: 25px;
+  width: 30px;
+  height: 30px;
   margin: 0 auto;
 
   background: url(images/send.svg);
@@ -387,7 +391,7 @@ section {
 }
 
 .footer-text {
-  width: 1110px;
+  width: 100%;
 
   margin-top: 60px;
 
