@@ -259,7 +259,6 @@ h4,
 .video {
   position: relative;
 
-  display: block;
   width: 928px; /** 16 **/
   height: 522px; /** 9 **/
   margin-top: 30px;
@@ -313,14 +312,12 @@ section {
 }
 
 .section-line {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 1098px;
-  height: 30px;
+  width: 100%;
 
   margin-top: 100px;
   padding-left: 12px;
+  padding-top: 2px;
+  padding-bottom: 2px;
 
   font-weight: 700;
   text-transform: uppercase;
